@@ -97,7 +97,7 @@ client.on(Events.MESSAGE_REACTION_ADD, onReactionAdd);
 client.on(Events.MESSAGE_REACTION_REMOVE, onReactionRemove);
 
 
-client.login(token).catch(err => {
+client.login(process.env.DToken).catch(err => {
 	logError(err);
 	process.exit(1);
 });
