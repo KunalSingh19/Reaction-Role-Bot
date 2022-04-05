@@ -32,8 +32,6 @@ const client = new Discord.Client({
 		Discord.Constants.PartialTypes.REACTION
 	]
 });
-const token_file = process.argv[2] || '/etc/discord/ReactionRoleBot/token';
-const token = fs.readFileSync(token_file).toString().trim();
 
 // Map of command names to handling functions. Doubles as a validator.
 const COMMANDS = new Map();
